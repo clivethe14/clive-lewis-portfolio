@@ -61,7 +61,11 @@ layout code.
    sitemap, and absolute OpenGraph image URLs.
 2. Fill in the LinkedIn and GitHub URLs in `lib/site.ts`.
 3. Replace the per-project `repo` values in `lib/content.ts` (they are `'#'` placeholders).
-4. Drop the real `resume.pdf` into `public/` and delete `public/PLACEHOLDER-resume.md`.
+4. Keep `public/resume.pdf` in place. It is intentionally gitignored — the PDF
+   carries a phone number and home address, and git history is permanent and
+   widely scraped, so it ships with the site without living in a public repo.
+   `npm run build` copies it into `out/` like any other static asset, so a clone
+   of this repo builds a site whose `/resume.pdf` link 404s until you add the file.
 
 ## Deploy
 
