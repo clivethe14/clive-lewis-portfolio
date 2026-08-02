@@ -65,18 +65,22 @@ export default function ProjectCard({ project }: { project: Project }) {
         ))}
       </ul>
 
-      {project.link && (
+      {(project.link || project.note) && (
         <div className="mt-6 border-t border-ink-border pt-4">
-          <a
-            href={project.link.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 font-mono text-xs text-accent transition-opacity hover:opacity-75"
-          >
-            {project.link.label}
-            <span className="sr-only"> for {project.name} (opens in a new tab)</span>
-            <span aria-hidden="true">↗</span>
-          </a>
+          {project.link ? (
+            <a
+              href={project.link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 font-mono text-xs text-accent transition-opacity hover:opacity-75"
+            >
+              {project.link.label}
+              <span className="sr-only"> for {project.name} (opens in a new tab)</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          ) : (
+            <p className="font-mono text-xs text-fg-faint">{project.note}</p>
+          )}
         </div>
       )}
     </article>

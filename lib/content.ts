@@ -19,6 +19,8 @@ export type Project = {
    * card renders without a link rather than with a dead one.
    */
   link?: { url: string; label: string };
+  /** Shown in place of a link when the work isn't publicly available. */
+  note?: string;
 };
 
 export const projects: Project[] = [
@@ -60,7 +62,11 @@ export const projects: Project[] = [
       'First-authored with Tarun Ramapuram and Dr. Juan Shan; presented at IEEE/ACM CHASE 2025 in New York City, June 2025.',
       'Framed accurately: this is applied deep learning on medical images driven by geometric measurement — model design, training, and evaluation — not detection, tracking, or segmentation work.',
     ],
-    // TODO: add the IEEE Xplore / ACM Digital Library page or DOI once available.
+    link: {
+      url: 'https://github.com/clivethe14/OsteoarthritisDetection',
+      label: 'View source',
+    },
+    // TODO: add the IEEE Xplore / ACM Digital Library page or DOI once indexed.
   },
   {
     slug: 'interactive-novel',
@@ -93,7 +99,7 @@ export const projects: Project[] = [
       'Designed a PostgreSQL data layer with clean, reusable endpoints covering consultant inquiries, event sponsorship forms, and media assets.',
       'I had no mobile development experience going in. I learned Flutter on the job and shipped production features within weeks.',
     ],
-    // Proprietary client work — no public link.
+    note: 'Internal app — the organization has not published it yet.',
   },
 ];
 
