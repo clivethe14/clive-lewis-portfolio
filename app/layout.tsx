@@ -37,6 +37,12 @@ export const metadata: Metadata = {
   authors: [{ name: site.name }],
   creator: site.name,
   alternates: { canonical: '/' },
+  icons: {
+    // An SVG mark scales to every tab-strip and bookmark size from one file.
+    // apple-touch-icon.png is rasterized from it during prebuild for iOS.
+    icon: [{ url: '/icon.svg', type: 'image/svg+xml' }],
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180' }],
+  },
   openGraph: {
     type: 'profile',
     siteName: `${site.name} — ${site.title}`,

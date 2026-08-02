@@ -11,8 +11,15 @@ next-env.d.ts
 # production
 /build
 
-# generated at build time by scripts/generate-og.mjs
+# generated at build time by scripts/generate-images.mjs
 /public/og.png
+/public/apple-touch-icon.png
+/public/favicon.ico
+
+# Deployed with the site but deliberately kept out of version control: the PDF
+# carries a phone number and home address, and git history is permanent and
+# scrapable. Keep the file locally; `npm run build` copies it into out/.
+/public/resume.pdf
 
 # local tooling
 /.claude/

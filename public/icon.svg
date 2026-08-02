@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Terminal prompt">
+  <!-- Echoes the site's terminal motif: the nav's `$` prompt and the hero's typed `>` line. -->
+  <rect width="64" height="64" rx="14" fill="#0b0e13"/>
+  <path d="M17 19 L31 32 L17 45" fill="none" stroke="#5eead4" stroke-width="7"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="37" y="38" width="13" height="7" rx="3" fill="#2dd4bf"/>
+</svg>

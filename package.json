@@ -5,8 +5,8 @@
   "description": "Personal portfolio site for Clive Lewis — statically exported Next.js.",
   "scripts": {
     "dev": "next dev",
-    "og": "node scripts/generate-og.mjs",
-    "prebuild": "npm run og",
+    "images": "node scripts/generate-images.mjs",
+    "prebuild": "npm run images",
     "build": "next build",
     "start": "npx serve out",
     "lint": "next lint",
