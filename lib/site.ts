@@ -17,11 +17,8 @@ export const site = {
 
 export const links = {
   email: 'clivelewis.dbit@gmail.com',
-  // TODO: paste the real LinkedIn profile URL.
-  linkedin: 'https://www.linkedin.com/in/PASTE-LINKEDIN-URL',
-  // TODO: paste the real GitHub profile URL.
-  github: 'https://github.com/PASTE-GITHUB-URL',
-  // TODO: drop the real PDF at public/resume.pdf.
+  linkedin: 'https://www.linkedin.com/in/clivevictorlewis/',
+  github: 'https://github.com/clivethe14',
   resume: '/resume.pdf',
 } as const;
 
