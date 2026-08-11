@@ -27,16 +27,16 @@ export default function AboutPage() {
       {/* Intro */}
       <section className="mt-8 max-w-prose space-y-5 text-base leading-relaxed text-fg-muted sm:text-lg">
         <p>
-          A coconut-harvesting robot doesn't sound like the beginning of a software career. But that was my undergraduate capstone as a mechanical engineering student in Mumbai. I wrote the Arduino C that made it move, and somewhere in that code I found the part of the project I couldn't put down. It wasn't the mechanics. It was the code. That was enough to pull me out of mechanical engineering and into software for good.
+          A coconut-harvesting robot doesn&rsquo;t sound like the beginning of a software career. But that was my undergraduate capstone as a mechanical engineering student in Mumbai. I wrote the Arduino C that made it move, and somewhere in that code I found the part of the project I couldn&rsquo;t put down. It wasn&rsquo;t the mechanics. It was the code. That was enough to pull me out of mechanical engineering and into software for good.
         </p>
         <p>
           My first real stop was enterprise work. As a Software Engineering Team Lead at Cognizant, I maintained a portfolio of Java integration interfaces for clients including British Airways, working under SWIFT banking compliance. The work was exacting, and it taught me a habit I still rely on. When a failure keeps recurring, the first fix you reach for is usually just a patch on the symptom, not the cause. Finding that cause means stepping back far enough to actually see it.
         </p>
-      <p>
-        It's the same instinct that brought me to New York for a Master's in Computer Science at Pace University, and it's why the classes that stayed with me longest were two Computer Vision electives nobody made me take.
-</p>
         <p>
-          I learn by building. With Flutter, with agentic AI architecture, with the internals of a U-Net, I got further by putting my hands on the problem than by reading about it first. That's also how I use AI coding tools day to day: not to skip the thinking, but to move faster through implementation so my attention stays where it matters, on architecture, judgment, and whether the thing actually works. And through all of it, I try to stay precise about what I've built versus what I haven't. A working prototype is not a production system, and saying so plainly is part of doing the work honestly.
+          It&rsquo;s the same instinct that brought me to New York for a Master&rsquo;s in Computer Science at Pace University, and it&rsquo;s why the classes that stayed with me longest were two Computer Vision electives nobody made me take.
+        </p>
+        <p>
+          I learn by building. With Flutter, with agentic AI architecture, with the internals of a U-Net, I got further by putting my hands on the problem than by reading about it first. That&rsquo;s also how I use AI coding tools day to day: not to skip the thinking, but to move faster through implementation so my attention stays where it matters, on architecture, judgment, and whether the thing actually works. And through all of it, I try to stay precise about what I&rsquo;ve built versus what I haven&rsquo;t. A working prototype is not a production system, and saying so plainly is part of doing the work honestly.
         </p>
       </section>
 
