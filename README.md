@@ -35,8 +35,8 @@ The dev server runs at http://localhost:3000.
 npm run build
 ```
 
-`build` runs `scripts/generate-og.mjs` first (writing `public/og.png`), then compiles and exports
-the site into `out/`. Useful extras:
+`build` runs `scripts/generate-images.mjs` first (writing `public/og.png`, the favicon, and the
+touch icon), then compiles and exports the site into `out/`. Useful extras:
 
 ```bash
 npm run typecheck && npm run lint
@@ -49,7 +49,7 @@ app/                 routes, metadata, sitemap.ts, robots.ts
 components/          Nav, Footer, Reveal, TypedLine, cards, Timeline
 lib/site.ts          identity, links, canonical URL
 lib/content.ts       all page copy as structured data
-scripts/generate-og.mjs   build-time OpenGraph card generation
+scripts/generate-images.mjs   build-time OpenGraph card, favicon, and touch icon generation
 ```
 
 Copy lives in `lib/content.ts` rather than inside JSX so wording can be revised without touching
@@ -73,10 +73,10 @@ npm run build
 ```
 
 ```bash
-rsync -avz --delete out/ user@your-vps:/var/www/clivelewis.dev/
+rsync -avz --delete out/ user@your-server:/var/www/clivelewis.dev/
 ```
 
-`--delete` keeps the server free of files removed from the build. On the VPS, make sure the
+`--delete` keeps the server free of files removed from the build. On the server, make sure the
 directory is readable by Caddy:
 
 ```bash
@@ -138,8 +138,9 @@ years from now.
 **OpenGraph image generated at build, not by a metadata route.** Next's `opengraph-image`
 convention works under static export, but emits an extension-less file referenced with a query
 string. Caddy serves that as `application/octet-stream`, and several crawlers drop the preview.
-`scripts/generate-og.mjs` writes a real `public/og.png` using `next/og`, which is already part of
-Next — so the card is generated from code, but ships as an ordinary static asset.
+`scripts/generate-images.mjs` writes a real `public/og.png` (and the favicon/touch icon) using
+`next/og`, which is already part of Next — so these are generated from code, but ship as ordinary
+static assets.
 
 **Accessibility.** Landmarks and heading order are checked rather than assumed: one `h1` per page
 and no skipped levels. Text colors were picked against measured contrast — the lowest-emphasis

@@ -27,27 +27,16 @@ export default function AboutPage() {
       {/* Intro */}
       <section className="mt-8 max-w-prose space-y-5 text-base leading-relaxed text-fg-muted sm:text-lg">
         <p>
-          I started out as a mechanical engineer in Mumbai. My undergraduate capstone was a
-          coconut-harvesting robot programmed in Arduino C, and writing the code for it turned out to
-          be the part I couldn&rsquo;t put down. That pulled me toward software, and the first stop
-          was enterprise work: a Software Engineering Team Lead role at Cognizant, maintaining a
-          portfolio of Java integration interfaces for clients like British Airways under SWIFT
-          banking compliance.
+          A coconut-harvesting robot doesn't sound like the beginning of a software career. But that was my undergraduate capstone as a mechanical engineering student in Mumbai. I wrote the Arduino C that made it move, and somewhere in that code I found the part of the project I couldn't put down. It wasn't the mechanics. It was the code. That was enough to pull me out of mechanical engineering and into software for good.
         </p>
         <p>
-          Enterprise systems taught me something I still lean on: when a failure keeps recurring,
-          the fix you reach for first is usually a symptom patch. The real work is stepping back far
-          enough to see the cause. That habit is why I came to New York for an MS in Computer
-          Science at Pace, and why the classes that stuck hardest were the two Computer Vision
-          electives nobody made me take.
+          My first real stop was enterprise work. As a Software Engineering Team Lead at Cognizant, I maintained a portfolio of Java integration interfaces for clients including British Airways, working under SWIFT banking compliance. The work was exacting, and it taught me a habit I still rely on. When a failure keeps recurring, the first fix you reach for is usually just a patch on the symptom, not the cause. Finding that cause means stepping back far enough to actually see it.
         </p>
+      <p>
+        It's the same instinct that brought me to New York for a Master's in Computer Science at Pace University, and it's why the classes that stayed with me longest were two Computer Vision electives nobody made me take.
+</p>
         <p>
-          I learn by building. Flutter, agentic AI architecture, the internals of a U-Net — in every
-          case I got further by getting my hands on the problem than by reading about it first. I use
-          AI coding tools daily to move fast through implementation details, which keeps my attention
-          on architecture, judgment, and whether the thing actually works. And I try to be exact
-          about what I&rsquo;ve done and what I haven&rsquo;t. A working prototype is not a
-          production system, and saying so out loud is part of the job.
+          I learn by building. With Flutter, with agentic AI architecture, with the internals of a U-Net, I got further by putting my hands on the problem than by reading about it first. That's also how I use AI coding tools day to day: not to skip the thinking, but to move faster through implementation so my attention stays where it matters, on architecture, judgment, and whether the thing actually works. And through all of it, I try to stay precise about what I've built versus what I haven't. A working prototype is not a production system, and saying so plainly is part of doing the work honestly.
         </p>
       </section>
 
